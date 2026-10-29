@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arcadia Game Hub プライバシーポリシー</title>
+<style>
+  :root { color-scheme: light dark; --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --line: #d1d9e0; --code: #f2f4f7; --accent: #5f6cd8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16171a; --fg: #e6e7ea; --muted: #9a9ea6; --line: #2e3036; --code: #222429; --accent: #aeb6ff; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.8 "Segoe UI", "Yu Gothic UI", "Hiragino Sans", "Noto Sans JP", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 1.8rem; line-height: 1.4; margin: 0 0 8px; }
+  h2 { font-size: 1.2rem; margin: 40px 0 8px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
+  p, li { color: var(--fg); }
+  h1 + p { color: var(--muted); margin-top: 0; }
+  ul { padding-left: 1.4em; }
+  li { margin: 4px 0; }
+  strong { color: var(--accent); font-weight: 600; }
+  code { background: var(--code); padding: 1px 6px; border-radius: 4px; font-size: 0.9em; word-break: break-all; }
+</style>
+</head>
+<body>
+<main>
+<h1>Arcadia Game Hub プライバシーポリシー</h1>
+<p>最終更新日: 2026年10月29日</p>
+<p>Arcadia Game Hub(以下「本アプリ」)は、PC にインストールされたゲームを一覧にして起動するための Windows 用ランチャーです。本アプリにおける情報の取り扱いは次のとおりです。</p>
+<h2>1. 収集・送信する情報</h2>
+<p>本アプリは、利用者の個人情報を収集しません。ゲームの一覧・インストール先・設定などの情報を、開発者や第三者のサーバーへ送信することもありません。</p>
+<p>本アプリには、広告、アクセス解析、利用状況の計測(テレメトリー)、独自のクラッシュレポートの仕組みは含まれていません。アカウントの登録やサインインもありません。</p>
+<h2>2. PC 内で読み取る情報</h2>
+<p>本アプリは、ゲームの一覧を作るために、利用者の PC 内の次の情報を読み取ります。</p>
+<ul>
+<li>Steam のインストール先(Windows のレジストリ)と、インストール済みのゲームの情報(ゲームの ID・名前・インストール先などが書かれた Steam の管理ファイル)</li>
+<li>Steam が PC 内に保存しているゲームの画像</li>
+<li>Epic Games Launcher のインストール情報(ゲームの ID・名前・インストール先などが書かれた管理ファイル。保存場所はレジストリから確認します)</li>
+<li>利用者が登録したゲームフォルダの中身(実行ファイルを見分けるためのファイル名・バージョン情報・アイコン、RPG ツクール製のゲームのタイトルが書かれたファイル)</li>
+<li>利用者が追加した実行ファイルの情報(バージョン情報・アイコン)と、利用者が選んだカバー画像</li>
+</ul>
+<h2>3. PC 内に保存する情報</h2>
+<p>本アプリは、次の情報を利用者の PC 内(<code>%LOCALAPPDATA%\GameHub</code>)にだけ保存します。</p>
+<ul>
+<li>ゲームの名前、実行ファイルとインストール先の場所、起動引数、入手元(Steam・Epic Games・手動登録・ゲームフォルダ)、Steam・Epic Games 上のゲームの ID</li>
+<li>ゲームを追加した日時、最後に起動した日時</li>
+<li>利用者が設定したお気に入り、ジャンル、プレイ状況、変更した名前、選んだカバー画像の場所</li>
+<li>利用者が登録したゲームフォルダの場所</li>
+<li>Steam の画像サーバーからダウンロードしたカバー画像</li>
+</ul>
+<p>保存する場所の情報(フォルダのパス)には、Windows のユーザー名が含まれる場合があります。これらの情報が PC の外に送られることはありません。</p>
+<h2>4. インターネット通信</h2>
+<p>本アプリが行う通信は、次の 1 つだけです。</p>
+<ul>
+<li><strong>Steam のゲームのカバー画像の取得</strong>:Steam のゲームのカバー画像が PC 内に見つからない場合に限り、Valve Corporation の画像配信サーバー(<code>steamstatic.com</code>)から画像をダウンロードします。リクエストの URL には、そのゲームの Steam 上の ID が含まれます。インターネット通信の仕組み上、利用者の IP アドレスは通信先のサーバーに伝わります。通信先での情報の取り扱いについては、Valve Corporation のプライバシーポリシーを参照してください。</li>
+</ul>
+<p>ダウンロードした画像は PC 内に保存し、次回からはそれを使います。</p>
+<h2>5. 他のアプリとの連携</h2>
+<p>利用者がゲームを起動すると、Steam のゲームは Steam に、Epic Games のゲームは Epic Games Launcher に、そのゲームの ID を渡して起動を依頼します。その後の Steam・Epic Games Launcher の動作と情報の取り扱いは、それぞれの提供元のプライバシーポリシーに従います。</p>
+<p>本アプリは Windows および Microsoft Store の機能の上で動作します。Windows や Microsoft Store が行う情報の取り扱い(エラー報告など)は、Microsoft のプライバシーに関する声明に従います。</p>
+<h2>6. 第三者への提供</h2>
+<p>本アプリは、利用者の情報を第三者に提供しません。</p>
+<h2>7. データの削除</h2>
+<p>保存されたデータは、利用者がいつでも削除できます。</p>
+<ul>
+<li><strong>Microsoft Store 版</strong>:本アプリをアンインストールすると、保存されたデータも削除されます。</li>
+<li><strong>インストーラー版</strong>:アンインストールの際に、データも削除するかどうかを確認します(既定では残します)。残したデータは、<code>%LOCALAPPDATA%\GameHub</code> フォルダを削除すると消去できます。</li>
+<li><strong>zip 版</strong>:<code>%LOCALAPPDATA%\GameHub</code> フォルダを削除すると消去できます。</li>
+</ul>
+<p>本アプリの画面で個々のゲームを「登録解除」すると、そのゲームの登録情報(名前・場所・お気に入り・ジャンル・プレイ状況など)が削除されます。ダウンロード済みのカバー画像は、上記のフォルダを削除するまで残ります。また、Steam・Epic Games・ゲームフォルダから検出したゲームは、インストールされている限り、次回の検出で再び一覧に追加されます。</p>
+<p>ゲーム本体のファイルを本アプリが変更・削除することはありません。</p>
+<h2>8. お問い合わせ</h2>
+<p>本ポリシーに関するお問い合わせは、Microsoft Store の本アプリのページに記載したサポート窓口までご連絡ください。</p>
+<h2>9. 改定</h2>
+<p>本ポリシーを改定した場合は、このページで公開します。</p>
+</main>
+</body>
+</html>
