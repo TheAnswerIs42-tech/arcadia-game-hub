@@ -43,12 +43,14 @@
 <li>Epic Games Launcher のインストール情報(ゲームの ID・名前・インストール先などが書かれた管理ファイル。保存場所はレジストリから確認します)</li>
 <li>利用者が登録したゲームフォルダの中身(実行ファイルを見分けるためのファイル名・バージョン情報・アイコン、RPG ツクール製のゲームのタイトルが書かれたファイル)</li>
 <li>利用者が追加した実行ファイルの情報(バージョン情報・アイコン)と、利用者が選んだカバー画像</li>
+<li>実行中のプログラムの場所(ファイルのパス)。プレイ時間を記録するため、本アプリの起動中に一定の間隔(15 秒ごと)で確認し、ライブラリのゲームのフォルダにあるプログラムが動いているかだけを判定します。プログラムの中身・画面・入力には触れず、場所も保存しません</li>
 </ul>
 <h2>3. PC 内に保存する情報</h2>
 <p>本アプリは、次の情報を利用者の PC 内(<code>%LOCALAPPDATA%\GameHub</code>)にだけ保存します。</p>
 <ul>
 <li>ゲームの名前、実行ファイルとインストール先の場所、起動引数、入手元(Steam・Epic Games・手動登録・ゲームフォルダ)、Steam・Epic Games 上のゲームの ID</li>
 <li>ゲームを追加した日時、最後に起動した日時</li>
+<li>プレイの記録(ゲームごとの、プレイを始めた日時と終えた日時)</li>
 <li>利用者が設定したお気に入り、ジャンル、プレイ状況、変更した名前、選んだカバー画像の場所</li>
 <li>利用者が登録したゲームフォルダの場所</li>
 <li>Steam の画像サーバーからダウンロードしたカバー画像</li>
@@ -72,7 +74,7 @@
 <li><strong>インストーラー版</strong>:アンインストールの際に、データも削除するかどうかを確認します(既定では残します)。残したデータは、<code>%LOCALAPPDATA%\GameHub</code> フォルダを削除すると消去できます。</li>
 <li><strong>zip 版</strong>:<code>%LOCALAPPDATA%\GameHub</code> フォルダを削除すると消去できます。</li>
 </ul>
-<p>本アプリの画面で個々のゲームを「登録解除」すると、そのゲームの登録情報(名前・場所・お気に入り・ジャンル・プレイ状況など)が削除されます。ダウンロード済みのカバー画像は、上記のフォルダを削除するまで残ります。また、Steam・Epic Games・ゲームフォルダから検出したゲームは、インストールされている限り、次回の検出で再び一覧に追加されます。</p>
+<p>本アプリの画面で個々のゲームを「登録解除」すると、そのゲームの登録情報(名前・場所・お気に入り・ジャンル・プレイ状況・プレイの記録など)が削除されます。ダウンロード済みのカバー画像は、上記のフォルダを削除するまで残ります。また、Steam・Epic Games・ゲームフォルダから検出したゲームは、インストールされている限り、次回の検出で再び一覧に追加されます。</p>
 <p>ゲーム本体のファイルを本アプリが変更・削除することはありません。</p>
 <h2>8. お問い合わせ</h2>
 <p>本ポリシーに関するお問い合わせは、Microsoft Store の本アプリのページに記載したサポート窓口までご連絡ください。</p>
@@ -95,12 +97,14 @@
 <li>Epic Games Launcher installation information (files listing each game&#39;s ID, name and install location; their location is looked up in the registry)</li>
 <li>The contents of game folders you register (file names, version information and icons used to identify executables, and the files where RPG Maker games store their titles)</li>
 <li>Information about executables you add (version information and icons), and cover images you choose</li>
+<li>The locations (file paths) of running programs. To record play time, while the app is running it checks at a regular interval (every 15 seconds) only whether a program inside one of your games&#39; folders is running. It never looks at the contents, screens or input of any program, and the locations are not stored</li>
 </ul>
 <h2>3. Information stored on your PC</h2>
 <p>The app stores the following information only on your PC (in <code>%LOCALAPPDATA%\GameHub</code>):</p>
 <ul>
 <li>Game names, executable and install locations, launch arguments, source (Steam, Epic Games, added manually, game folder), and game IDs on Steam and Epic Games</li>
 <li>When each game was added and when it was last launched</li>
+<li>Your play history (when each play session of each game started and ended)</li>
 <li>Favorites, genres, play status, renamed titles and the location of cover images you choose</li>
 <li>The locations of game folders you register</li>
 <li>Cover images downloaded from Steam&#39;s image servers</li>
@@ -124,7 +128,7 @@
 <li><strong>Installer version</strong>: when you uninstall, you are asked whether to delete the data as well (it is kept by default). Data you kept can be removed by deleting the <code>%LOCALAPPDATA%\GameHub</code> folder.</li>
 <li><strong>Zip version</strong>: delete the <code>%LOCALAPPDATA%\GameHub</code> folder.</li>
 </ul>
-<p>Choosing &quot;Remove&quot; for a game in the app deletes that game&#39;s entry (name, location, favorite, genres, play status and so on). Downloaded cover images remain until you delete the folder above. Games detected from Steam, Epic Games or game folders are added again on the next scan for as long as they remain installed.</p>
+<p>Choosing &quot;Remove&quot; for a game in the app deletes that game&#39;s entry (name, location, favorite, genres, play status, play history and so on). Downloaded cover images remain until you delete the folder above. Games detected from Steam, Epic Games or game folders are added again on the next scan for as long as they remain installed.</p>
 <p>The app never changes or deletes the games themselves.</p>
 <h2>8. Contact</h2>
 <p>For questions about this policy, please use the support contact listed on the app&#39;s page in the Microsoft Store.</p>
