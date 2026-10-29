@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Arcadia Game Hub プライバシーポリシー</title>
+<title>Arcadia Game Hub プライバシーポリシー / Arcadia Game Hub Privacy Policy</title>
 <style>
   :root { color-scheme: light dark; --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --line: #d1d9e0; --code: #f2f4f7; --accent: #5f6cd8; }
   @media (prefers-color-scheme: dark) {
@@ -11,11 +11,14 @@
   }
   body { margin: 0; background: var(--bg); color: var(--fg);
          font: 16px/1.8 "Segoe UI", "Yu Gothic UI", "Hiragino Sans", "Noto Sans JP", sans-serif; }
-  main { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
-  h1 { font-size: 1.8rem; line-height: 1.4; margin: 0 0 8px; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+  nav { text-align: right; color: var(--muted); font-size: 0.95rem; }
+  nav a { color: var(--accent); text-decoration: none; }
+  nav a:hover { text-decoration: underline; }
+  h1 { font-size: 1.8rem; line-height: 1.4; margin: 24px 0 8px; }
   h2 { font-size: 1.2rem; margin: 40px 0 8px; padding-bottom: 6px; border-bottom: 1px solid var(--line); }
-  p, li { color: var(--fg); }
   h1 + p { color: var(--muted); margin-top: 0; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 64px 0 0; }
   ul { padding-left: 1.4em; }
   li { margin: 4px 0; }
   strong { color: var(--accent); font-weight: 600; }
@@ -24,6 +27,8 @@
 </head>
 <body>
 <main>
+<nav><a href="#ja" lang="ja">日本語</a> <span aria-hidden="true">·</span> <a href="#en" lang="en">English</a></nav>
+<section id="ja" lang="ja">
 <h1>Arcadia Game Hub プライバシーポリシー</h1>
 <p>最終更新日: 2026年10月29日</p>
 <p>Arcadia Game Hub(以下「本アプリ」)は、PC にインストールされたゲームを一覧にして起動するための Windows 用ランチャーです。本アプリにおける情報の取り扱いは次のとおりです。</p>
@@ -73,6 +78,59 @@
 <p>本ポリシーに関するお問い合わせは、Microsoft Store の本アプリのページに記載したサポート窓口までご連絡ください。</p>
 <h2>9. 改定</h2>
 <p>本ポリシーを改定した場合は、このページで公開します。</p>
+</section>
+<hr>
+<section id="en" lang="en">
+<h1>Arcadia Game Hub Privacy Policy</h1>
+<p>Last updated: October 29, 2026</p>
+<p>Arcadia Game Hub (&quot;the app&quot;) is a Windows launcher that lists the games installed on your PC and starts them. This policy explains how the app handles information.</p>
+<h2>1. Information collected or sent</h2>
+<p>The app does not collect any personal information. It does not send your game list, install locations, settings or any other information about you to the developer or to any third-party server.</p>
+<p>The app contains no advertising, analytics, usage tracking (telemetry) or crash reporting of its own. There is no account registration or sign-in.</p>
+<h2>2. Information read on your PC</h2>
+<p>To build your game list, the app reads the following information on your PC:</p>
+<ul>
+<li>Where Steam is installed (from the Windows registry) and information about installed games (Steam&#39;s own files listing each game&#39;s ID, name and install location)</li>
+<li>Game images that Steam keeps on your PC</li>
+<li>Epic Games Launcher installation information (files listing each game&#39;s ID, name and install location; their location is looked up in the registry)</li>
+<li>The contents of game folders you register (file names, version information and icons used to identify executables, and the files where RPG Maker games store their titles)</li>
+<li>Information about executables you add (version information and icons), and cover images you choose</li>
+</ul>
+<h2>3. Information stored on your PC</h2>
+<p>The app stores the following information only on your PC (in <code>%LOCALAPPDATA%\GameHub</code>):</p>
+<ul>
+<li>Game names, executable and install locations, launch arguments, source (Steam, Epic Games, added manually, game folder), and game IDs on Steam and Epic Games</li>
+<li>When each game was added and when it was last launched</li>
+<li>Favorites, genres, play status, renamed titles and the location of cover images you choose</li>
+<li>The locations of game folders you register</li>
+<li>Cover images downloaded from Steam&#39;s image servers</li>
+</ul>
+<p>Stored locations (folder paths) may include your Windows user name. None of this information leaves your PC.</p>
+<h2>4. Internet access</h2>
+<p>The app accesses the internet for one purpose only:</p>
+<ul>
+<li><strong>Downloading Steam cover images</strong>: only when a Steam game&#39;s cover image is not found on your PC, the app downloads it from Valve Corporation&#39;s image servers (<code>steamstatic.com</code>). The request URL contains the game&#39;s Steam ID. As with any internet connection, your IP address is visible to the server. For how that information is handled there, see Valve Corporation&#39;s privacy policy.</li>
+</ul>
+<p>Downloaded images are saved on your PC and reused afterwards.</p>
+<h2>5. Working with other apps</h2>
+<p>When you start a game, the app asks Steam (for Steam games) or the Epic Games Launcher (for Epic Games titles) to launch it, passing that game&#39;s ID. What Steam and the Epic Games Launcher do after that, and how they handle information, is governed by their own privacy policies.</p>
+<p>The app runs on Windows and the Microsoft Store. Information handled by Windows or the Microsoft Store (such as error reporting) is governed by the Microsoft Privacy Statement.</p>
+<h2>6. Sharing with third parties</h2>
+<p>The app does not share your information with third parties.</p>
+<h2>7. Deleting your data</h2>
+<p>You can delete the stored data at any time.</p>
+<ul>
+<li><strong>Microsoft Store version</strong>: uninstalling the app also deletes its stored data.</li>
+<li><strong>Installer version</strong>: when you uninstall, you are asked whether to delete the data as well (it is kept by default). Data you kept can be removed by deleting the <code>%LOCALAPPDATA%\GameHub</code> folder.</li>
+<li><strong>Zip version</strong>: delete the <code>%LOCALAPPDATA%\GameHub</code> folder.</li>
+</ul>
+<p>Choosing &quot;Remove&quot; for a game in the app deletes that game&#39;s entry (name, location, favorite, genres, play status and so on). Downloaded cover images remain until you delete the folder above. Games detected from Steam, Epic Games or game folders are added again on the next scan for as long as they remain installed.</p>
+<p>The app never changes or deletes the games themselves.</p>
+<h2>8. Contact</h2>
+<p>For questions about this policy, please use the support contact listed on the app&#39;s page in the Microsoft Store.</p>
+<h2>9. Changes</h2>
+<p>If this policy changes, the updated version will be published on this page.</p>
+</section>
 </main>
 </body>
 </html>
