@@ -30,7 +30,7 @@
 <nav><a href="#ja" lang="ja">日本語</a> <span aria-hidden="true">·</span> <a href="#en" lang="en">English</a></nav>
 <section id="ja" lang="ja">
 <h1>Arcadia Game Hub プライバシーポリシー</h1>
-<p>最終更新日: 2026年10月29日</p>
+<p>最終更新日: 2026年10月31日</p>
 <p>Arcadia Game Hub(以下「本アプリ」)は、PC にインストールされたゲームを一覧にして起動するための Windows 用ランチャーです。本アプリにおける情報の取り扱いは次のとおりです。</p>
 <h2>1. 収集・送信する情報</h2>
 <p>本アプリは、利用者の個人情報を収集しません。ゲームの一覧・インストール先・設定などの情報を、開発者や第三者のサーバーへ送信することもありません。</p>
@@ -44,6 +44,7 @@
 <li>利用者が登録したゲームフォルダの中身(実行ファイルを見分けるためのファイル名・バージョン情報・アイコン、RPG ツクール製のゲームのタイトルが書かれたファイル)</li>
 <li>利用者が追加した実行ファイルの情報(バージョン情報・アイコン)と、利用者が選んだカバー画像</li>
 <li>実行中のプログラムの場所(ファイルのパス)。プレイ時間を記録するため、本アプリの起動中に一定の間隔(15 秒ごと)で確認し、ライブラリのゲームのフォルダにあるプログラムが動いているかだけを判定します。プログラムの中身・画面・入力には触れず、場所も保存しません</li>
+<li>Windows に登録されたアプリのアンインストール情報(アプリの名前・インストール先・アンインストーラーの場所)。利用者がゲームの「アンインストール」を選んだときだけ、そのゲームのアンインストーラーを探すために読み取ります。読み取った内容は保存しません</li>
 </ul>
 <h2>3. PC 内に保存する情報</h2>
 <p>本アプリは、次の情報を利用者の PC 内(<code>%LOCALAPPDATA%\GameHub</code>)にだけ保存します。</p>
@@ -56,6 +57,11 @@
 <li>Steam の画像サーバーからダウンロードしたカバー画像</li>
 </ul>
 <p>保存する場所の情報(フォルダのパス)には、Windows のユーザー名が含まれる場合があります。これらの情報が PC の外に送られることはありません。</p>
+<p>また、利用者が「設定」で選んだ場合に限り、次のものを Windows に登録します(いつでも「設定」で取り消せます)。</p>
+<ul>
+<li>サインイン時の自動起動(zip 版・インストーラー版は Windows のレジストリの Run キー、Microsoft Store 版は Windows のスタートアップの設定)</li>
+<li>デスクトップのショートカット</li>
+</ul>
 <h2>4. インターネット通信</h2>
 <p>本アプリが行う通信は、次の 1 つだけです。</p>
 <ul>
@@ -75,7 +81,7 @@
 <li><strong>zip 版</strong>:<code>%LOCALAPPDATA%\GameHub</code> フォルダを削除すると消去できます。</li>
 </ul>
 <p>本アプリの画面で個々のゲームを「登録解除」すると、そのゲームの登録情報(名前・場所・お気に入り・ジャンル・プレイ状況・プレイの記録など)が削除されます。ダウンロード済みのカバー画像は、上記のフォルダを削除するまで残ります。また、Steam・Epic Games・ゲームフォルダから検出したゲームは、インストールされている限り、次回の検出で再び一覧に追加されます。</p>
-<p>ゲーム本体のファイルを本アプリが変更・削除することはありません。</p>
+<p>ゲーム本体のファイルを本アプリが変更・削除することはありません。ただし、利用者がゲームの「アンインストール」を選んで確認した場合に限り、そのゲームのアンインストーラー(Steam・Epic Games Launcher を含む)を起動するか、アンインストーラーのないゲームはゲームのフォルダをごみ箱へ移動します(ごみ箱から元に戻せます)。</p>
 <h2>8. お問い合わせ</h2>
 <p>本ポリシーに関するお問い合わせは、Microsoft Store の本アプリのページに記載したサポート窓口までご連絡ください。</p>
 <h2>9. 改定</h2>
@@ -84,7 +90,7 @@
 <hr>
 <section id="en" lang="en">
 <h1>Arcadia Game Hub Privacy Policy</h1>
-<p>Last updated: October 29, 2026</p>
+<p>Last updated: October 31, 2026</p>
 <p>Arcadia Game Hub (&quot;the app&quot;) is a Windows launcher that lists the games installed on your PC and starts them. This policy explains how the app handles information.</p>
 <h2>1. Information collected or sent</h2>
 <p>The app does not collect any personal information. It does not send your game list, install locations, settings or any other information about you to the developer or to any third-party server.</p>
@@ -98,6 +104,7 @@
 <li>The contents of game folders you register (file names, version information and icons used to identify executables, and the files where RPG Maker games store their titles)</li>
 <li>Information about executables you add (version information and icons), and cover images you choose</li>
 <li>The locations (file paths) of running programs. To record play time, while the app is running it checks at a regular interval (every 15 seconds) only whether a program inside one of your games&#39; folders is running. It never looks at the contents, screens or input of any program, and the locations are not stored</li>
+<li>Uninstall information registered in Windows (app names, install locations and uninstaller locations). It is read only when you choose &quot;Uninstall&quot; for a game, to find that game&#39;s uninstaller, and is not stored</li>
 </ul>
 <h2>3. Information stored on your PC</h2>
 <p>The app stores the following information only on your PC (in <code>%LOCALAPPDATA%\GameHub</code>):</p>
@@ -110,6 +117,11 @@
 <li>Cover images downloaded from Steam&#39;s image servers</li>
 </ul>
 <p>Stored locations (folder paths) may include your Windows user name. None of this information leaves your PC.</p>
+<p>Only if you choose to in Settings, the app also registers the following with Windows (you can undo this in Settings at any time):</p>
+<ul>
+<li>Starting automatically when you sign in (the Run key in the Windows registry for the zip and installer versions, or the Windows startup settings for the Microsoft Store version)</li>
+<li>A desktop shortcut</li>
+</ul>
 <h2>4. Internet access</h2>
 <p>The app accesses the internet for one purpose only:</p>
 <ul>
@@ -129,7 +141,7 @@
 <li><strong>Zip version</strong>: delete the <code>%LOCALAPPDATA%\GameHub</code> folder.</li>
 </ul>
 <p>Choosing &quot;Remove&quot; for a game in the app deletes that game&#39;s entry (name, location, favorite, genres, play status, play history and so on). Downloaded cover images remain until you delete the folder above. Games detected from Steam, Epic Games or game folders are added again on the next scan for as long as they remain installed.</p>
-<p>The app never changes or deletes the games themselves.</p>
+<p>The app never changes or deletes the games themselves, except when you choose &quot;Uninstall&quot; for a game and confirm it: the app then starts that game&#39;s uninstaller (including Steam or Epic Games Launcher), or, for games without an uninstaller, moves the game&#39;s folder to the Recycle Bin (it can be restored from there).</p>
 <h2>8. Contact</h2>
 <p>For questions about this policy, please use the support contact listed on the app&#39;s page in the Microsoft Store.</p>
 <h2>9. Changes</h2>
